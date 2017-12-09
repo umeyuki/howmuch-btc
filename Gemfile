@@ -48,4 +48,5 @@ group :development do
   gem 'spring'
 end
 
-gem 'pg'
+gem 'sqlite3', group: [:development, :test]
+gem 'pg', group: :production
