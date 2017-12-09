@@ -28,7 +28,7 @@ gem 'slim'
 gem 'slim-rails'
 gem 'http'
 gem "dalli"
-
+gem 'sqlite3'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
