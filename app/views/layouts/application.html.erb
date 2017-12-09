@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>今ビットコインっていくら?</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="世界一シンプルなビットコイン価格情報サイト。今現在のビットコイン価格をお知らせします。今ビットコインの価格は<%= @bitcoin_price %>円です">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
