@@ -1,10 +1,12 @@
 h1 今ビットコインはいくら?
 meta name="viewport" content="width=device-width,initial-scale=1"
-p 今のビットコイン価格は
+p 今のビットコイン(BTC)価格は
 p
   strong #{@bitcoin_price}円です
 small
-  |※ 価格は誤差がある可能性があります
+  |※ビットコインは1,000円から購入可能です
+  br
+  | 1,000円分購入 →  #{sprintf("%2f", 1000.to_f /  190000 )}BTC
 
 / ul
 /   li 3ヶ月前
