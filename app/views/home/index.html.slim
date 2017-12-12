@@ -1,12 +1,41 @@
-h1 今Zaifトークンはいくら?
-meta name="viewport" content="width=device-width,initial-scale=1"
-p 今のZaifトークン価格は
-p
-  strong #{@zaiftoken_price}円です
-small ビットコイン(#{@bitcoin_price}円)は高くて買えないという方に将来性があるZaifトークンがおすすめ。
-
-
-p Zaifトークンの購入はZaifのみ!<br/>以下のバナーから3分で登録できます[:
-
-a href="https://zaif.jp?ac=f1d79jpul7" rel="nofollow"
-  img src="https://d2p8taqyjofgrq.cloudfront.net/images/affiliate/banner/zaif_D_300x250.png?ac=f1d79jpul7"
+#wrapper
+  #header
+    h1 今Zaifトークンはいくら?
+  #body
+    .price
+      em
+        |Zaifトークンの価格は
+        strong
+          |#{@zaiftoken_price}
+      span 円です
+    .ad.ad_slot1
+    .chrono
+      table
+        caption 価格推移
+        tbody
+          tr
+            th 12月
+            td 0.5547円
+          tr
+            th 11月
+            td 0.4125円
+          tr
+            th 10月
+            td 0.8132円
+          tr
+            th 9月
+            td 0.8778円
+          tr
+            th 8月
+            td 1.240円
+          tr
+            th 7月
+            td 0.1056円
+    .bottom_ad style="text-align: center"
+      small ビットコイン(#{@bitcoin_price}円)は高すぎる!という方におすすめ!
+      br
+      small Zaifトークンが買えるのはZaifのみ!<br/>以下のバナーから3分で登録できます[:
+      a href="https://zaif.jp?ac=f1d79jpul7" rel="nofollow"
+        img src="https://d2p8taqyjofgrq.cloudfront.net/images/affiliate/banner/zaif_D_300x250.png?ac=f1d79jpul7"
+    .clear
+  #footer

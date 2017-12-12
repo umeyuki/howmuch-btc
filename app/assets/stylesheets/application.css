@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: white;
+	color: black;
+	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+a {text-decoration: none;}
+a:link {color: #0033cc;}
+a:visited {color: #666666;}
+
+#header {padding: 10px 0;}
+
+h1 {
+    color: #364e96;
+    padding: 0.5em 0;
+    border-top: solid 3px #364e96;
+    border-bottom: solid 3px #364e96;
+}
+
+.price, #price {
+	margin: 1em;
+	text-align: center;
+	font-size: x-large;
+	font-weight: bold;
+	line-height: 1em;
+	font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS PMincho', serif;
+}
+
+.price em, span.year {
+	font-style: normal;
+	font-size: 200%;
+	line-height: 1em;
+	display: block;
+}
+
+.price strong, span.year span {
+	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 200%;
+	line-height: 1em;
+}
+
+.zodiac {text-align: center;}
+
+.chrono table {border-collapse: collapse; font-size: x-large; margin: 10px auto;}
+.chrono tbody {text-align: right; line-height: 2em;}
+.chrono tr {border-bottom: thin solid silver;}
+.chrono td {padding-left: 1em;}
+
+.memo dl {
+	margin: 10px;
+	padding: 0.5em;
+	background: #336666;
+	color: #ffffff;
+	font-family: 'ChalkboardSE-Regular', 'Hiragino Maru Gothic ProN', 'Hiragino Kaku Gothic ProN', sans-serif;
+	line-height: 1.5em;
+}
+
+
+.memo dt {text-decoration: underline;}
+.memo dd {margin: 0; text-indent: 1em;}
+
+.chalk1 {color: #ffffcc;}
+.chalk2 {color: #ffcccc;}
+
+.clear {clear: both;}
+
+
+#footer {margin-bottom: 40px;}
+#footer ul {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	font-size: x-large;
+	line-height: 1.5em;
+}
+
+@media(min-width: 768px) {
+	#wrapper {width: 768px; margin: auto;}
+	h1 {margin: 20px 10px;}
+	.price, #price {font-size: xx-large; margin: 10px 0;}
+	.price em, span.year {display: inline;}
+	.chrono {width: 50%; float: left;}
+	.memo, .bottom_ad {width: 50%; float: right;}
+	.chrono table {font-size: medium;}
+}
