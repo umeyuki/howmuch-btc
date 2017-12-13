@@ -38,7 +38,7 @@ h1 {
 .price, #price {
 	margin: 1em;
 	text-align: center;
-	font-size: x-large;
+	font-size: 20px;
 	font-weight: bold;
 	line-height: 1em;
 	font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS PMincho', serif;
