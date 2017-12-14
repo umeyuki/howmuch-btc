@@ -1,0 +1,34 @@
+#wrapper
+  #header
+    h1 今リップルはいくら?
+  #body
+    .price
+      em
+        |リップル(XRP)の価格は
+        strong
+          |#{@xrp_price}
+      span 円です
+    .ad.ad_slot1
+    .chrono
+      table
+        caption 価格推移
+        tbody
+          tr
+            th 11月
+            td 27.825円
+          tr
+            th 10月
+            td 22.47円
+          tr
+            th 9月
+            td 22.19円
+    .bottom_ad style="text-align: center"
+      small ビットコイン(#{@bitcoin_price}円)は高すぎる!という方におすすめ!
+      br
+      |リップル(XRP)は
+      = link_to "Coincheck", "https://coincheck.com/?c=n8j2cRHtHUU"
+      |で購入可能!<br/>以下のバナーから1分で登録できます[:
+      a href="https://coincheck.com/?c=n8j2cRHtHUU" target="_blank"
+        img src="https://coincheck.com/images/affiliates/03_cc_banner_300x250.png" alt="ビットコイン取引高日本一の仮想通貨取引所 coincheck bitcoin"
+    .clear
+  #footer
