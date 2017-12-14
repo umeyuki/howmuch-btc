@@ -1,5 +1,6 @@
 class XrpController < ApplicationController
-    def index
+  def index
+    @name = "リップル"
     @xrp_price = Rails.cache.fetch("xrp_price", expires_in: 3.minutes ) do
       res = HTTP.get("https://coincheck.com/api/rate/xrp_jpy")
       JSON.parse(res.body)["rate"].to_f.round.to_s(:delimited)

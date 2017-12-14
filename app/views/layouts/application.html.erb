@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>今ビットコインはいくら?</title>
+  <title>今<%= @name %>はいくら?</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <meta charset="UTF-8">
-  <meta name="description" content="世界一シンプルなビットコイン価格情報サイト。今現在のビットコイン価格をお知らせします。今ビットコインの価格は<%= @bitcoin_price %>円です">
+  <meta name="description" content="世界一シンプルな仮想通貨価格情報サイト。現在の<%= @name %>価格をお知らせします。今<%= @name %>の価格は<%= price %>円です">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
