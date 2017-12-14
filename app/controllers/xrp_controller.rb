@@ -1,0 +1,2 @@
+class XrpController < ApplicationController
+end

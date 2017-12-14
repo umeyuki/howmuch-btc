@@ -1,0 +1,2 @@
+class ZaifTokenController < ApplicationController
+end

@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root 'bitcoin#index'
+  resources :bitcoin, only: [:index]
+  resources :xrp, only: [:index]
+  resources :zaif_token, only: [:index]
 end
