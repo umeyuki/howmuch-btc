@@ -1,13 +1,16 @@
 #wrapper
   #header
-    h1 今リップルはいくら?
+    h1 今リップル(XRP)はいくら?
   #body
     .price
       em
-        |リップル(XRP)の価格は
+        |リップルの価格は
         strong
           |#{@xrp_price}
-      span 円です
+      span
+        |円
+        i.fa.fa-level-up
+        |です
     .ad.ad_slot1
     .chrono
       table
@@ -15,13 +18,20 @@
         tbody
           tr
             th 11月
-            td 27.825円
+            td
+              |27.825円
+              i.fa.fa-level-up
           tr
             th 10月
-            td 22.47円
+            td
+              |22.47円
+              i.fa.fa-level-up
           tr
             th 9月
-            td 22.19円
+            td
+              |22.19円
+              i.fa.fa-level-up
+
     .bottom_ad style="text-align: center"
       small ビットコイン(#{@bitcoin_price}円)は高すぎる!という方におすすめ!
       br

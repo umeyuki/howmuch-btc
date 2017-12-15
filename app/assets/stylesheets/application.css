@@ -96,9 +96,17 @@ h1 {
 @media(min-width: 768px) {
 	#wrapper {width: 768px; margin: auto;}
 	h1 {margin: 20px 10px;}
-	.price, #price {font-size: xx-large; margin: 10px 0;}
+	.price, #price {font-size: 26px; margin: 10px 0;}
 	.price em, span.year {display: inline;}
 	.chrono {width: 50%; float: left;}
 	.memo, .bottom_ad {width: 50%; float: right;}
 	.chrono table {font-size: medium;}
+}
+
+.fa-level-up {
+    color: green;
+}
+
+.fa-level-down {
+    color: red;
 }

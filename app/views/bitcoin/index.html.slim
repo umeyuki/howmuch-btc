@@ -1,13 +1,16 @@
 #wrapper
   #header
-    h1 今ビットコインはいくら?
+    h1 今ビットコイン(BTC)はいくら?
   #body
     .price
       em
-        |ビットコイン(BTC)の価格は
+        |ビットコインの価格は
         strong
           |#{@bitcoin_price}
-      span 円です
+      span
+        |円です
+        i.fa.fa-level-up
+
     .ad.ad_slot1
     .chrono
       table
@@ -15,19 +18,30 @@
         tbody
           tr
             th 11月
-            td 1,126,245円
+            td
+              |1,126,245円
+              i.fa.fa-level-up
+
           tr
             th 10月
-            td 711,145円
+            td
+              |711,145円
+              i.fa.fa-level-up
           tr
             th 9月
-            td 481,700円
+            td
+              |481,700円
+              i.fa.fa-level-down
           tr
             th 8月
-            td 521,050円
+            td
+              |521,050円
+              i.fa.fa-level-up
           tr
             th 7月
-            td 309,950円
+            td
+              |309,950円
+              i.fa.fa-level-up
     .bottom_ad style="text-align: center"
       small ビットコインは1,000円から購入できます。<br/>出川哲郎のCMでおなじみ
       = link_to "Coincheck", "https://coincheck.com/?c=n8j2cRHtHUU"

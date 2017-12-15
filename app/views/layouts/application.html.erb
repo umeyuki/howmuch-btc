@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <meta charset="UTF-8">
   <meta name="description" content="世界一シンプルな仮想通貨価格情報サイト。現在の<%= @name %>価格をお知らせします。今<%= @name %>の価格は<%= price %>円です">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 <%= yield %>
-
 </body>
 </html>
