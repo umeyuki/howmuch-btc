@@ -1,0 +1,50 @@
+#wrapper
+  #header
+    h1 今ビットコインキャッシュはいくら?
+  #body
+    .price
+      em
+        |ビットコインキャッシュの価格は
+        strong
+          |#{@bitcoin_cash_price}
+      span
+        |円です
+        i.fa.fa-level-up
+
+    .ad.ad_slot1
+    .chrono
+      table
+        caption 価格推移
+        tbody
+          tr
+            th 11月
+            td
+              |1,126,245円
+              i.fa.fa-level-up
+
+          tr
+            th 10月
+            td
+              |711,145円
+              i.fa.fa-level-up
+          tr
+            th 9月
+            td
+              |481,700円
+              i.fa.fa-level-down
+          tr
+            th 8月
+            td
+              |521,050円
+              i.fa.fa-level-up
+          tr
+            th 7月
+            td 309,950円
+    .bottom_ad style="text-align: center"
+      small ビットコインは1,000円から購入できます。<br/>出川哲郎のCMでおなじみ
+      = link_to "Coincheck", "https://coincheck.com/?c=n8j2cRHtHUU"
+      |で購入がおすすめ!<br/>以下のバナーから1分で登録できます[:
+      a href="https://coincheck.com/?c=n8j2cRHtHUU" target="_blank"
+        img src="https://coincheck.com/images/affiliates/03_cc_banner_300x250.png" alt="ビットコイン取引高日本一の仮想通貨取引所 coincheck bitcoin"
+    .clear
+  #footer
